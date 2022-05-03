@@ -1,6 +1,7 @@
 .SecilenOge {
   font-style: italic;
   font-size: 30px;
+  color: #fff;
 }
 
 .NavigationBar {
@@ -9,4 +10,7 @@
 }
 .Slider {
   max-height: 962px;
+}
+.Kısım {
+  margin-top: 100px;
 }
