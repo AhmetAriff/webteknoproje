@@ -59,7 +59,7 @@
       </div>
       <div class="row">
         <div class="col text-center">
-          <form action="">
+          <form action="index.php" method="post">
             <h3>İletişim Bilgileri:</h3>
             <br />
             <input
@@ -76,7 +76,7 @@
             /><br /><br />
             <input
               type="text"
-              name="telefonno"
+              name="telno"
               placeholder="Telefon no"
               size="100px"
             /><br /><br />
@@ -93,14 +93,18 @@
               size="100px"
             /><br /><br />
             <h6>Cinsiyetiniz:</h6>
-            <input type="radio" name="cinsiyet" id="cinsiyet1" /><label
-              for="cinsiyet1"
-              >Erkek</label
-            >
-            <input type="radio" name="cinsiyet" id="cinsiyet2" /><label
-              for="cinsiyet2"
-              >Kadın</label
-            ><br /><br />
+            <input
+              type="radio"
+              name="cinsiyet"
+              id="cinsiyet1"
+              value="ERKEK"
+            /><label for="cinsiyet1">Erkek</label>
+            <input
+              type="radio"
+              name="cinsiyet"
+              id="cinsiyet2"
+              value="KADIN"
+            /><label for="cinsiyet2">Kadın</label><br /><br />
             <textarea
               name="yazialani"
               cols="100"
