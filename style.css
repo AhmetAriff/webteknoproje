@@ -66,3 +66,10 @@
   font-size: 20px;
   font-style: italic;
 }
+
+.CardBaslikHobilerim {
+  text-align: center;
+  color: rgb(178, 19, 19);
+  font-style: italic;
+  font-size: 50px;
+}
