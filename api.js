@@ -22,7 +22,7 @@ const displayResult = (result) => {
   temp.innerText = `${Math.round(result.main.temp)}°C`;
 
   let desc = document.querySelector(".aciklama");
-  desc.innerTex = result.weather[0].description;
+  desc.innerText = result.weather[0].description;
 
   let minmax = document.querySelector(".minmax");
   minmax.innerText = `${Math.round(result.main.temp_min)}°C / ${Math.round(
