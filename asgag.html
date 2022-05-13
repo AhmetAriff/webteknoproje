@@ -6,17 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="bootstrap.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="bootstrap.js"></script>
+    
     <title>Document</title>
   </head>
   <body>
-    <div class="container mt-5 align-items-center">
-    <form action="">
-    <div>
-      <div class="align-items-ceneter">
-        <input type="text" class="form-control" placeholder="State"  />
+    <div  class="container mt-5 ">
+     <div style="margin:auto" class="app">
+     <div class="header">
+       <h1 style="text-align:center ;">Hava Durumu</h1>
+       
       </div>
-    </div>
+        <input  type="text" id="searchBar" placeholder="Şehir Giriniz..">
+  
+     <div class=" content">
+       <div class=" city">Istanbul,TR</div>
+       <div class=" sicaklik">15°C</div>
+       <div class=" aciklama">Gunesli</div>
+       <div class="minmax">14°C / 19°C</div>
+     </div>
+   </div>
   </div>
   </body>
 </form>
+<script src="api.js"></script>
 </html>

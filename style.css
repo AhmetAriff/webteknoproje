@@ -73,3 +73,41 @@
   font-style: italic;
   font-size: 50px;
 }
+
+.app {
+  align-items: center;
+  text-align: center;
+}
+.header {
+  padding: 50px 20px 30px 20px;
+}
+.header h1 {
+  font-size: 50px;
+  color: #fbb034;
+}
+.header input {
+  width: 25%;
+  padding: 10px;
+  margin-top: 15px;
+  text-align: center;
+}
+.city {
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.sicaklik {
+  font-size: 100px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.aciklama {
+  font-size: 25px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.minmax {
+  font-size: 24px;
+  margin-bottom: 44px;
+}
