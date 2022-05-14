@@ -35,8 +35,8 @@ function validateGiris() {
     return false;
   } else if (
     !mailValidation.test(kullaniciAdi) ||
-    kullaniciAdi.substring(kullaniciAdi.length - 4, kullaniciAdi.length) !=
-      ".com"
+    kullaniciAdi.substring(kullaniciAdi.length - 18, kullaniciAdi.length) !=
+      "ogr.sakarya.edu.tr"
   ) {
     alert("Geçerli bir mail adresi giriniz");
     return false;
