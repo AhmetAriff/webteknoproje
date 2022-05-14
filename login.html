@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hava Durumu</title>
-    <link rel="stylesheet" href="bootstrap.css" />
+    <title>Giriş Yap</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bootstrap.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top NavigationBar">
@@ -32,46 +32,70 @@
               <a class="nav-link" href="Özgeçmiş.html">Özgeçmiş</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Şehrim.html">Şehrim</a>
+              <a class="nav-link" href="Şehrim.html">Şehrim </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="Mirasımız.html">Mirasımız</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link SecilenOge" style="color: #fff" href="#"
-                ><strong>API</strong>
-              </a>
+              <a class="nav-link" href="API.html">API</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="İletişim.html"> İletişim</a>
+              <a class="nav-link" href="İletişim.html">İletişim</a>
             </li>
           </ul>
         </div>
-        <a href="login.html"
-          ><button type="submit" class="btn btn-success">Giriş Yap</button></a
-        >
       </div>
     </nav>
-    <div class="container mt-5">
-      <div class="app">
-        <div class="header">
-          <h1>Hava Durumu</h1>
-        </div>
-        <input type="text" id="searchBar" placeholder="Şehir Giriniz.." />
+    <div class="container mt-5 ml-5">
+      <div style="margin-top: 200px; margin-bottom: 167px">
+        <form
+          action="index2.php"
+          method="post"
+          name="giris"
+          onsubmit="return validateGiris()"
+        >
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <input
+              name="kullaniciadi"
+              type="text"
+              id="form2Example1"
+              class="form-control"
+              placeholder="Kullanıcı Adı"
+            />
+            <label class="form-label" for="form2Example1"></label>
+          </div>
 
-        <div class="content">
-          <div class="city">Istanbul,TR</div>
-          <div class="sicaklik">15°C</div>
-          <div class="aciklama">Gunesli</div>
-          <div class="minmax">14°C / 19°C</div>
-        </div>
+          <!-- Password input -->
+          <div class="form-outline mb-4">
+            <input
+              name="sifre"
+              type="password"
+              id="form2Example2"
+              class="form-control"
+              placeholder="Şifre"
+            />
+            <label class="form-label" for="form2Example2"></label>
+          </div>
+
+          <div class="row">
+            <div class="col-6">
+              <button type="submit" class="btn btn-primary btn-block mb-4">
+                Giriş Yap
+              </button>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
-
-    <footer class="py-5 bg-dark text-white text-center">
+    <footer
+      style="position: absoulute; bottom: 0"
+      class="py-5 bg-dark text-white text-center"
+    >
       Web-Teknolojileri-Projesi © Ahmet Arif Karakullukçu 2022
     </footer>
   </body>
   <script src="bootstrap.js"></script>
-  <script src="api.js"></script>
+  <script src="validation.js"></script>
 </html>

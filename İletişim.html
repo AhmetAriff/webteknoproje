@@ -47,7 +47,9 @@
             </li>
           </ul>
         </div>
-        <button type="button" class="btn btn-success">Giriş Yap</button>
+        <a href="login.html"
+          ><button type="submit" class="btn btn-success">Giriş Yap</button></a
+        >
       </div>
     </nav>
 
@@ -95,7 +97,7 @@
               class="form-control"
               id="formGroupExampleInput"
               placeholder="Telefon Numaranız"
-              name="TELEFON NO"
+              name="TEL"
             />
           </div>
         </div>
@@ -107,7 +109,7 @@
               class="form-control"
               id="formGroupExampleInput"
               placeholder="Mail Adresiniz"
-              name="E-MAİL ADRESİ"
+              name="MAİL"
             />
           </div>
         </div>
@@ -131,19 +133,13 @@
               id="exampleFormControlTextarea1"
               rows="5"
               placeholder="Eklemek İstedikleriniz"
-              name="İLETİLEN MESAJ"
+              name="MESAJ"
             ></textarea>
           </div>
         </div>
         <div style="margin-top: 15px; text-align: center">
           <button type="reset" class="btn btn-primary">Temizle</button>
-          <button
-            type="submit"
-            class="btn btn-primary"
-            onclick="validateMail()"
-          >
-            Gönder
-          </button>
+          <button type="submit" class="btn btn-primary">Gönder</button>
         </div>
       </form>
     </div>
