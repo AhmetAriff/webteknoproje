@@ -15,7 +15,10 @@ function validateForm() {
   } else if (!telValidation.test(telno)) {
     alert("Geçerli bir telefon numarası giriniz");
     return false;
-  } else if (!mailValidation.test(mail)) {
+  } else if (
+    !mailValidation.test(mail) ||
+    mail.substring(mail.length - 4, mail.length) != ".com"
+  ) {
     alert("geçerli bir mail adresi giriniz");
     return false;
   } else {
@@ -30,8 +33,15 @@ function validateGiris() {
   if (kullaniciAdi == "" || sifre == "") {
     alert("kullanıcı adı ve şifre bölümü boş bırakılamaz");
     return false;
-  } else if (!mailValidation.test(kullaniciAdi)) {
+  } else if (
+    !mailValidation.test(kullaniciAdi) ||
+    kullaniciAdi.substring(kullaniciAdi.length - 4, kullaniciAdi.length) !=
+      ".com"
+  ) {
     alert("Geçerli bir mail adresi giriniz");
+    return false;
+  } else if (kullaniciAdi.substring(0, 10) != sifre) {
+    alert("Yanlış Parola.. Parolanızı tekrardan giriniz");
     return false;
   } else {
     return true;
